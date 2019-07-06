@@ -16,6 +16,9 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+#Constants file
+Constants.swift
+
 # CocoaPod
 Pods/*
 Podfile.lock
