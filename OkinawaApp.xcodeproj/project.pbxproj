@@ -114,6 +114,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B94FDF8C22D1B1BE002A9C9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B94FDF8D22D1B1EB002A9C9C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B94FDF8E22D1B1F5002A9C9C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B94FDF8F22D1B20A002A9C9C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		B987541922D0E480002B83D1 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +170,11 @@
 				B987542522D0E480002B83D1 /* AppDelegate.swift */,
 				B987545522D0F32A002B83D1 /* Constants.swift */,
 				B987542722D0E480002B83D1 /* ViewController.swift */,
+				B987545722D1B167002B83D1 /* ViewController */,
+				B94FDF8C22D1B1BE002A9C9C /* ViewModel */,
+				B94FDF8D22D1B1EB002A9C9C /* UseCase */,
+				B94FDF8E22D1B1F5002A9C9C /* Entity */,
+				B94FDF8F22D1B20A002A9C9C /* Utility */,
 				B987542922D0E480002B83D1 /* Main.storyboard */,
 				B987542C22D0E482002B83D1 /* Assets.xcassets */,
 				B987542E22D0E482002B83D1 /* LaunchScreen.storyboard */,
@@ -166,6 +199,13 @@
 				B987544722D0E482002B83D1 /* Info.plist */,
 			);
 			path = OkinawaAppUITests;
+			sourceTree = "<group>";
+		};
+		B987545722D1B167002B83D1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
