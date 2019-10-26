@@ -9,6 +9,8 @@ target 'OkinawaApp' do
   pod 'GooglePlaces'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   target 'OkinawaAppTests' do
     inherit! :search_paths
