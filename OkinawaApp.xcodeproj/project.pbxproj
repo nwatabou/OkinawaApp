@@ -10,6 +10,11 @@
 		04339FA70C2ED1C0D56F3787 /* Pods_OkinawaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAD5E38A52AED83A0D1C397 /* Pods_OkinawaAppTests.framework */; };
 		47D6810823AEC9D51730ADBD /* Pods_OkinawaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FF8AD2F0EA048D8893F68F /* Pods_OkinawaAppUITests.framework */; };
 		A2FAA37EDDA9D18A476F7AF6 /* Pods_OkinawaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F02AD81BE884C09478897D /* Pods_OkinawaApp.framework */; };
+		B9262EB82364321200D10E1A /* island.json in Resources */ = {isa = PBXBuildFile; fileRef = B9262EB72364321200D10E1A /* island.json */; };
+		B9262EBA2364322600D10E1A /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EB92364322600D10E1A /* Island.swift */; };
+		B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBB2364327E00D10E1A /* ResponseEntity.swift */; };
+		B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBD2364337F00D10E1A /* IslandsResponse.swift */; };
+		B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBF236434D700D10E1A /* RequestEntity.swift */; };
 		B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542522D0E480002B83D1 /* AppDelegate.swift */; };
 		B987542822D0E480002B83D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542722D0E480002B83D1 /* ViewController.swift */; };
 		B987542B22D0E480002B83D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B987542922D0E480002B83D1 /* Main.storyboard */; };
@@ -44,6 +49,11 @@
 		673B9EA13E369BF79C87F117 /* Pods-OkinawaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkinawaAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OkinawaAppUITests/Pods-OkinawaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B48081BD4715DA8C8D3B329 /* Pods-OkinawaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OkinawaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OkinawaApp/Pods-OkinawaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		85FF8AD2F0EA048D8893F68F /* Pods_OkinawaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OkinawaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9262EB72364321200D10E1A /* island.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = island.json; sourceTree = "<group>"; };
+		B9262EB92364322600D10E1A /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		B9262EBB2364327E00D10E1A /* ResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntity.swift; sourceTree = "<group>"; };
+		B9262EBD2364337F00D10E1A /* IslandsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsResponse.swift; sourceTree = "<group>"; };
+		B9262EBF236434D700D10E1A /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
 		B987542222D0E480002B83D1 /* OkinawaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkinawaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987542522D0E480002B83D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B987542722D0E480002B83D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +124,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B9262EB6236431E800D10E1A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B9262EB72364321200D10E1A /* island.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		B94FDF8C22D1B1BE002A9C9C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +149,8 @@
 		B94FDF8E22D1B1F5002A9C9C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B9262EB92364322600D10E1A /* Island.swift */,
+				B9262EBD2364337F00D10E1A /* IslandsResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -138,6 +158,8 @@
 		B94FDF8F22D1B20A002A9C9C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B9262EBF236434D700D10E1A /* RequestEntity.swift */,
+				B9262EBB2364327E00D10E1A /* ResponseEntity.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -175,6 +197,7 @@
 				B94FDF8D22D1B1EB002A9C9C /* UseCase */,
 				B94FDF8E22D1B1F5002A9C9C /* Entity */,
 				B94FDF8F22D1B20A002A9C9C /* Utility */,
+				B9262EB6236431E800D10E1A /* Resource */,
 				B987542922D0E480002B83D1 /* Main.storyboard */,
 				B987542C22D0E482002B83D1 /* Assets.xcassets */,
 				B987542E22D0E482002B83D1 /* LaunchScreen.storyboard */,
@@ -319,6 +342,7 @@
 			files = (
 				B987543022D0E482002B83D1 /* LaunchScreen.storyboard in Resources */,
 				B987542D22D0E482002B83D1 /* Assets.xcassets in Resources */,
+				B9262EB82364321200D10E1A /* island.json in Resources */,
 				B987542B22D0E480002B83D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,8 +491,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */,
 				B987542822D0E480002B83D1 /* ViewController.swift in Sources */,
+				B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */,
 				B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */,
+				B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */,
+				B9262EBA2364322600D10E1A /* Island.swift in Sources */,
 				B987545622D0F32A002B83D1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
