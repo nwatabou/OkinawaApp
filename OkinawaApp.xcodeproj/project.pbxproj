@@ -16,6 +16,8 @@
 		B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBD2364337F00D10E1A /* IslandsResponse.swift */; };
 		B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBF236434D700D10E1A /* RequestEntity.swift */; };
 		B9262EC42364360F00D10E1A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC32364360F00D10E1A /* ApiClient.swift */; };
+		B9262EC62365583C00D10E1A /* IslandUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC52365583C00D10E1A /* IslandUseCase.swift */; };
+		B9262EC823655CEC00D10E1A /* IslandUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */; };
 		B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542522D0E480002B83D1 /* AppDelegate.swift */; };
 		B987542822D0E480002B83D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542722D0E480002B83D1 /* ViewController.swift */; };
 		B987542B22D0E480002B83D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B987542922D0E480002B83D1 /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		B9262EBD2364337F00D10E1A /* IslandsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsResponse.swift; sourceTree = "<group>"; };
 		B9262EBF236434D700D10E1A /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
 		B9262EC32364360F00D10E1A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B9262EC52365583C00D10E1A /* IslandUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandUseCase.swift; sourceTree = "<group>"; };
+		B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandUseCaseTests.swift; sourceTree = "<group>"; };
 		B987542222D0E480002B83D1 /* OkinawaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkinawaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987542522D0E480002B83D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B987542722D0E480002B83D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,14 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		B9262EC923655CF400D10E1A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 		B94FDF8C22D1B1BE002A9C9C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +156,7 @@
 		B94FDF8D22D1B1EB002A9C9C /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				B9262EC52365583C00D10E1A /* IslandUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -212,6 +225,7 @@
 		B987543922D0E482002B83D1 /* OkinawaAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B9262EC923655CF400D10E1A /* UseCase */,
 				B987543A22D0E482002B83D1 /* OkinawaAppTests.swift */,
 				B987543C22D0E482002B83D1 /* Info.plist */,
 			);
@@ -501,6 +515,7 @@
 				B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */,
 				B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */,
 				B9262EBA2364322600D10E1A /* Island.swift in Sources */,
+				B9262EC62365583C00D10E1A /* IslandUseCase.swift in Sources */,
 				B987545622D0F32A002B83D1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9262EC823655CEC00D10E1A /* IslandUseCaseTests.swift in Sources */,
 				B987543B22D0E482002B83D1 /* OkinawaAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

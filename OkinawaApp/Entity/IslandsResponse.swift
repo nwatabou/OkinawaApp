@@ -10,15 +10,18 @@ import Foundation
 import SwiftyJSON
 
 struct IslandResponse: ResponseEntity {
+
+    var json: JSON
     
     let islands: [Island]
     
     init(_ json: JSON) {
+        self.json = json
         let array = json["response"]["list"].arrayValue
         self.islands = array.map({ data -> Island in
             return Island(id: data["id"].stringValue,
                           name: data["name"].stringValue,
-                          nameKana: data["nameKana"].stringValue,
+                          nameKana: data["name_kana"].stringValue,
                           uri: URL(string: data["uri"].stringValue),
                           latitude: data["latitude"].floatValue,
                           longitude: data["longitude"].floatValue)
