@@ -15,6 +15,7 @@
 		B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBB2364327E00D10E1A /* ResponseEntity.swift */; };
 		B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBD2364337F00D10E1A /* IslandsResponse.swift */; };
 		B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBF236434D700D10E1A /* RequestEntity.swift */; };
+		B9262EC42364360F00D10E1A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC32364360F00D10E1A /* ApiClient.swift */; };
 		B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542522D0E480002B83D1 /* AppDelegate.swift */; };
 		B987542822D0E480002B83D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542722D0E480002B83D1 /* ViewController.swift */; };
 		B987542B22D0E480002B83D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B987542922D0E480002B83D1 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		B9262EBB2364327E00D10E1A /* ResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntity.swift; sourceTree = "<group>"; };
 		B9262EBD2364337F00D10E1A /* IslandsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsResponse.swift; sourceTree = "<group>"; };
 		B9262EBF236434D700D10E1A /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
+		B9262EC32364360F00D10E1A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B987542222D0E480002B83D1 /* OkinawaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkinawaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987542522D0E480002B83D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B987542722D0E480002B83D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				B9262EBF236434D700D10E1A /* RequestEntity.swift */,
 				B9262EBB2364327E00D10E1A /* ResponseEntity.swift */,
+				B9262EC32364360F00D10E1A /* ApiClient.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 			files = (
 				B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */,
 				B987542822D0E480002B83D1 /* ViewController.swift in Sources */,
+				B9262EC42364360F00D10E1A /* ApiClient.swift in Sources */,
 				B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */,
 				B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */,
 				B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */,
