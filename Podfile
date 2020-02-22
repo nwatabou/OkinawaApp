@@ -11,6 +11,8 @@ target 'OkinawaApp' do
   pod 'RxCocoa'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'Material'
+  pod 'GuillotineMenu'
 
   target 'OkinawaAppTests' do
     inherit! :search_paths

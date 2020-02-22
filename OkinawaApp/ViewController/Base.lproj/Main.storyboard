@@ -15,14 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5F-rg-xNl" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h5F-rg-xNl" secondAttribute="bottom" id="7Cp-a0-l4G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h5F-rg-xNl" secondAttribute="trailing" id="HK0-bN-Ead"/>
+                            <constraint firstItem="h5F-rg-xNl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bpd-CK-A5z"/>
+                            <constraint firstItem="h5F-rg-xNl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gJx-kL-Dhn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qdx-qj-Woz"/>
+                    <navigationItem key="navigationItem" id="qdx-qj-Woz">
+                        <barButtonItem key="rightBarButtonItem" image="list.dash" catalog="system" id="lqo-rk-Abi">
+                            <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="listButton" destination="qdx-qj-Woz" id="UuG-Pc-fZ4"/>
+                        <outlet property="map" destination="h5F-rg-xNl" id="9HG-N7-ovV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987.20000000000005" y="20.689655172413794"/>
+            <point key="canvasLocation" x="983" y="11"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="weX-vw-7QZ">
@@ -43,4 +63,7 @@
             <point key="canvasLocation" x="46" y="12"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list.dash" catalog="system" width="64" height="42"/>
+    </resources>
 </document>

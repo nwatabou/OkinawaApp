@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import GoogleMaps
+import Material
 
 class MainViewController: UIViewController {
 
@@ -17,33 +18,32 @@ class MainViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private let defaultPosition = CLLocationCoordinate2D(latitude: 26.2140964, longitude: 127.6824531)
 
-    private var map: GMSMapView!
+    @IBOutlet weak var map: GMSMapView!
+    @IBOutlet weak var listButton: UINavigationItem!
+
     private var islandList = [Island]()
     private var markers = [GMSMarker]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadView()
         configView()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+
         guard !islandList.isEmpty else { return }
         reloadMap()
     }
 
-    override func loadView() {
+    private func configView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
         let camera = GMSCameraPosition.camera(withTarget: defaultPosition, zoom: 12.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         map = mapView
-    }
 
-    private func configView() {
         viewModel.fetchIslands()
             .asDriver(onErrorRecover: { error in
                 // TODO: エラー時の処理
@@ -72,4 +72,3 @@ class MainViewController: UIViewController {
         return CLLocationCoordinate2D(latitude: lat, longitude: long)
     }
 }
-
