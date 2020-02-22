@@ -43,7 +43,7 @@
 			},
 			{
 				"id" : "272",
-				"name" : "宮城島",
+				"name" : "宮城島(うるま市)",
 				"name_kana" : "ミヤギジマ",
 				"uri" : "http://ja.dbpedia.org/resource/宮城島",
 				"latitude" : 26.3686662,
@@ -62,16 +62,16 @@
 				"name" : "野甫島",
 				"name_kana" : "ノホジマ",
 				"uri" : "http://ja.dbpedia.org/resource/野甫島",
-				"latitude" : 26.9952958,
-				"longitude" : 127.9030444
+				"latitude" : 26.9952773,
+				"longitude" : 127.920342
 			},
 			{
 				"id" : "275",
 				"name" : "伊是名島",
 				"name_kana" : "イゼナジマ",
 				"uri" : "http://ja.dbpedia.org/resource/伊是名島",
-				"latitude" : 26.9332326,
-				"longitude" : 127.9169853
+				"latitude" : 26.9349546,
+				"longitude" : 127.9396491
 			},
 			{
 				"id" : "276",
@@ -86,32 +86,32 @@
 				"name" : "水納島(本部町)",
 				"name_kana" : "ミンナシマ",
 				"uri" : "http://ja.dbpedia.org/resource/水納島_(本部町)",
-				"latitude" : 26.6474244,
-				"longitude" : 127.8110991
+				"latitude" : 26.6483126,
+				"longitude" : 127.8173015
 			},
 			{
 				"id" : "278",
 				"name" : "津堅島",
 				"name_kana" : "ツケンジマ",
 				"uri" : "http://ja.dbpedia.org/resource/津堅島",
-				"latitude" : 26.2521445,
-				"longitude" : 127.9321345
+				"latitude" : 26.2522852,
+				"longitude" : 127.9418695
 			},
 			{
 				"id" : "279",
 				"name" : "久高島",
 				"name_kana" : "クダカジマ",
 				"uri" : "http://ja.dbpedia.org/resource/久高島",
-				"latitude" : 26.1619722,
-				"longitude" : 127.8793825
+				"latitude" : 26.1615023,
+				"longitude" : 127.8921623
 			},
 			{
 				"id" : "280",
 				"name" : "粟国島",
 				"name_kana" : "アグニジマ",
 				"uri" : "http://ja.dbpedia.org/resource/粟国島",
-				"latitude" : 26.588466,
-				"longitude" : 127.2106301
+				"latitude" : 26.5882089,
+				"longitude" : 127.230632
 			},
 			{
 				"id" : "281",
@@ -126,32 +126,32 @@
 				"name" : "座間味島",
 				"name_kana" : "ザマミジマ",
 				"uri" : "http://ja.dbpedia.org/resource/座間味島",
-				"latitude" : 26.2352614,
-				"longitude" : 127.2895818
+				"latitude" : 26.2333563,
+				"longitude" : 127.3051159
 			},
 			{
 				"id" : "283",
 				"name" : "阿嘉島",
 				"name_kana" : "アカシマ",
 				"uri" : "http://ja.dbpedia.org/resource/阿嘉島",
-				"latitude" : 26.2000154,
-				"longitude" : 127.2615106
+				"latitude" : 26.200994,
+				"longitude" : 127.2788449
 			},
 			{
 				"id" : "284",
 				"name" : "慶留間島",
 				"name_kana" : "ゲルマジマ",
 				"uri" : "http://ja.dbpedia.org/resource/慶留間島",
-				"latitude" : 26.1817074,
-				"longitude" : 127.2805997
+				"latitude" : 26.1826671,
+				"longitude" : 127.2890929
 			},
 			{
 				"id" : "285",
 				"name" : "渡嘉敷島",
 				"name_kana" : "トカシキジマ",
 				"uri" : "http://ja.dbpedia.org/resource/渡嘉敷島",
-				"latitude" : 26.1861773,
-				"longitude" : 127.3216293
+				"latitude" : 26.1924553,
+				"longitude" : 127.3560087
 			},
 			{
 				"id" : "286",
@@ -166,24 +166,24 @@
 				"name" : "久米島",
 				"name_kana" : "クメジマ",
 				"uri" : "http://ja.dbpedia.org/resource/久米島",
-				"latitude" : 26.3413462,
-				"longitude" : 126.6969101
+				"latitude" : 26.3535764,
+				"longitude" : 126.7713942
 			},
 			{
 				"id" : "288",
 				"name" : "奥武島",
 				"name_kana" : "オウジマ",
 				"uri" : "http://ja.dbpedia.org/resource/奥武島",
-				"latitude" : 26.1292482,
-				"longitude" : 127.7718694
+				"latitude" : 26.1299573,
+				"longitude" : 127.7727881
 			},
 			{
 				"id" : "289",
 				"name" : "北大東島",
 				"name_kana" : "キタダイトウジマ",
 				"uri" : "http://ja.dbpedia.org/resource/北大東島",
-				"latitude" : 25.9445495,
-				"longitude" : 131.2904997
+				"latitude" : 25.9435596,
+				"longitude" : 131.3049445
 			},
 			{
 				"id" : "290",
@@ -220,10 +220,10 @@
 			{
 				"id" : "294",
 				"name" : "来間島",
-				"name_kana" : "クレマジマ",
+				"name_kana" : "クリマジマ",
 				"uri" : "http://ja.dbpedia.org/resource/来間島",
-				"latitude" : 24.7229089,
-				"longitude" : 125.2499558
+				"latitude" : 24.7221137,
+				"longitude" : 125.2467362
 			},
 			{
 				"id" : "295",
@@ -313,14 +313,14 @@
 				"latitude" : 24.2338858,
 				"longitude" : 124.013085
 			},
-			{
-				"id" : "306",
-				"name" : "上地島",
-				"name_kana" : "カミヂジマ",
-				"uri" : "http://ja.dbpedia.org/resource/上地島",
-				"latitude" : 24.234436,
-				"longitude" : 123.942067
-			},
+            {
+                "id" : "306",
+                "name" : "新城島",
+                "name_kana" : "アラグスクジマ",
+                "uri" : "http://ja.dbpedia.org/resource/新城島",
+                "latitude" : 24.2342002,
+                "longitude" : 123.9456539
+            },
 			{
 				"id" : "308",
 				"name" : "波照間島",
@@ -352,7 +352,7 @@
 				"uri" : "http://ja.dbpedia.org/resource/与那国島",
 				"latitude" : 24.4558433,
 				"longitude" : 122.9936482
-			}
+			},
 		]
 	}
 }
