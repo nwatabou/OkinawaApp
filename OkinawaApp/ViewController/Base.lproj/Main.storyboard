@@ -36,7 +36,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="listButton" destination="qdx-qj-Woz" id="UuG-Pc-fZ4"/>
+                        <outlet property="listButton" destination="lqo-rk-Abi" id="Yqn-Ij-5Cm"/>
                         <outlet property="map" destination="h5F-rg-xNl" id="9HG-N7-ovV"/>
                     </connections>
                 </viewController>

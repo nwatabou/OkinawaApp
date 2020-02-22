@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     private let defaultPosition = CLLocationCoordinate2D(latitude: 26.2140964, longitude: 127.6824531)
 
     @IBOutlet weak var map: GMSMapView!
-    @IBOutlet weak var listButton: UINavigationItem!
+    @IBOutlet weak var listButton: UIBarButtonItem!
 
     private var islandList = [Island]()
     private var markers = [GMSMarker]()
@@ -43,6 +43,12 @@ class MainViewController: UIViewController {
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         map = mapView
+
+        listButton.rx.tap
+            .subscribe(onNext: { [weak self] _ in
+                let vc = IslandsListViewController.instanceFromStoryBoard()
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }).disposed(by: disposeBag)
 
         viewModel.fetchIslands()
             .asDriver(onErrorRecover: { error in
