@@ -58,5 +58,8 @@ extension IslandsListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let cell = tableView.cellForRow(at: indexPath) as? IslandTableViewCell else { return }
+        cell.tapped()
+        islands[indexPath.row].isVisited = !islands[indexPath.row].isVisited
     }
 }

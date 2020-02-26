@@ -15,4 +15,5 @@ struct Island {
     let uri: URL?
     let latitude: Float
     let longitude: Float
+    var isVisited: Bool = false
 }

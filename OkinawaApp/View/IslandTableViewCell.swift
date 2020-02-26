@@ -15,25 +15,25 @@ class IslandTableViewCell: UITableViewCell {
     static let reuseIdentifier = "islandCell"
     static let cellHeight: CGFloat = 60.0
 
-    @IBOutlet weak var checkButton: UIButton!
+
+    @IBOutlet weak var checkBoxImageView: UIImageView!
     @IBOutlet weak var titileLabel: UILabel!
 
+    private let checkedImage = UIImage(named: "check_box")
+    private let uncheckedImage = UIImage(named: "check_box_outline")
     private var disposeBag = DisposeBag()
     private var isChecked: Bool = false {
         didSet {
             if isChecked {
-                checkButton.setImage(checkedImage, for: .normal)
+                checkBoxImageView.image = checkedImage
             } else {
-                checkButton.setImage(uncheckedImage, for: .normal)
+                checkBoxImageView.image = uncheckedImage
             }
         }
     }
-    private let checkedImage = UIImage(named: "check_box")
-    private let uncheckedImage = UIImage(named: "check_box_outline")
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        commonInit()
     }
 
     override func prepareForReuse() {
@@ -44,17 +44,11 @@ class IslandTableViewCell: UITableViewCell {
     }
 
     func setData(_ island: Island) {
+        isChecked = island.isVisited
         titileLabel.text = island.name
     }
 
     func tapped() {
         isChecked = !isChecked
-    }
-
-    private func commonInit() {
-        checkButton.rx.tap
-            .subscribe(onNext: { [weak self] _ in
-                self?.tapped()
-            }).disposed(by: disposeBag)
     }
 }
