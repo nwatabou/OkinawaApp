@@ -7,12 +7,12 @@ target 'OkinawaApp' do
 
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'Google-Maps-iOS-Utils'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'Material'
-  pod 'GuillotineMenu'
 
   target 'OkinawaAppTests' do
     inherit! :search_paths
