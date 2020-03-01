@@ -27,6 +27,7 @@
 		B987543B22D0E482002B83D1 /* OkinawaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987543A22D0E482002B83D1 /* OkinawaAppTests.swift */; };
 		B987544622D0E482002B83D1 /* OkinawaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987544522D0E482002B83D1 /* OkinawaAppUITests.swift */; };
 		B987545622D0F32A002B83D1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987545522D0F32A002B83D1 /* Constants.swift */; };
+		B9A921D1240B794A0003F9EA /* POIItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A921D0240B794A0003F9EA /* POIItem.swift */; };
 		B9D7D00324012ED200B88032 /* IslandsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7D00224012ED200B88032 /* IslandsListViewController.swift */; };
 		B9D7D00524012EF800B88032 /* IslandsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D7D00424012EF800B88032 /* IslandsListViewController.storyboard */; };
 		B9D7D00B2401317700B88032 /* IslandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D7D0092401317700B88032 /* IslandTableViewCell.swift */; };
@@ -84,6 +85,7 @@
 		B987544522D0E482002B83D1 /* OkinawaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkinawaAppUITests.swift; sourceTree = "<group>"; };
 		B987544722D0E482002B83D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B987545522D0F32A002B83D1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B9A921D0240B794A0003F9EA /* POIItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIItem.swift; sourceTree = "<group>"; };
 		B9D7D00224012ED200B88032 /* IslandsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsListViewController.swift; sourceTree = "<group>"; };
 		B9D7D00424012EF800B88032 /* IslandsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IslandsListViewController.storyboard; sourceTree = "<group>"; };
 		B9D7D0092401317700B88032 /* IslandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				B9D7D00F24013AD500B88032 /* Storyboard.swift */,
 				B9D7D0172401426200B88032 /* NSObject+Extension.swift */,
 				B9D7D013240140E200B88032 /* UITableView+Extension.swift */,
+				B9A921D0240B794A0003F9EA /* POIItem.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				B9D7D0182401426200B88032 /* NSObject+Extension.swift in Sources */,
 				B9D7D00B2401317700B88032 /* IslandTableViewCell.swift in Sources */,
 				B9262ECB2365682000D10E1A /* MapViewModel.swift in Sources */,
+				B9A921D1240B794A0003F9EA /* POIItem.swift in Sources */,
 				B987542822D0E480002B83D1 /* MainViewController.swift in Sources */,
 				B9262EC42364360F00D10E1A /* ApiClient.swift in Sources */,
 				B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */,

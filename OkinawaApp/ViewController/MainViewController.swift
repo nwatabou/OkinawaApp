@@ -10,17 +10,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 import GoogleMaps
+import GoogleMapsUtils
 import Material
 
 class MainViewController: UIViewController {
 
-    private let viewModel = MapViewModel()
-    private let disposeBag = DisposeBag()
-    private let defaultPosition = CLLocationCoordinate2D(latitude: 26.2140964, longitude: 127.6824531)
-
     @IBOutlet weak var map: GMSMapView!
     @IBOutlet weak var listButton: UIBarButtonItem!
 
+    private let viewModel = MapViewModel()
+    private let disposeBag = DisposeBag()
+    private let defaultPosition = CLLocationCoordinate2D(latitude: 26.2140964, longitude: 127.6824531)
+    private var clusterManager: GMUClusterManager?
     private var islandList = [Island]()
     private var markers = [GMSMarker]()
 
@@ -44,6 +45,11 @@ class MainViewController: UIViewController {
         view = mapView
         map = mapView
 
+        let iconGenerator = GMUDefaultClusterIconGenerator()
+        let algorithm = GMUNonHierarchicalDistanceBasedAlgorithm()
+        let renderer = GMUDefaultClusterRenderer(mapView: map, clusterIconGenerator: iconGenerator)
+        clusterManager = GMUClusterManager(map: mapView, algorithm: algorithm, renderer: renderer)
+
         listButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
                 let vc = IslandsListViewController.instanceFromStoryBoard()
@@ -64,10 +70,11 @@ class MainViewController: UIViewController {
         for island in islandList {
             let location = toLocation(latitude: island.latitude, longitude: island.longitude)
             bounds = bounds.includingCoordinate(location)
-            let marker = GMSMarker(position: location)
-            marker.title = island.name
-            marker.map = map
+
+            let marker = POIItem(position: location, name: island.name)
+            clusterManager?.add(marker)
         }
+        clusterManager?.cluster()
         let cameraUpdate = GMSCameraUpdate.fit(bounds, withPadding: 16.0)
         map.moveCamera(cameraUpdate)
     }
