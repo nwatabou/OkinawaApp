@@ -30,25 +30,11 @@ class MainViewController: UIViewController {
         configView()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        guard !islandList.isEmpty else { return }
-        reloadMap()
-    }
-
     private func configView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withTarget: defaultPosition, zoom: 12.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        map = mapView
-
         let iconGenerator = GMUDefaultClusterIconGenerator()
         let algorithm = GMUNonHierarchicalDistanceBasedAlgorithm()
         let renderer = GMUDefaultClusterRenderer(mapView: map, clusterIconGenerator: iconGenerator)
-        clusterManager = GMUClusterManager(map: mapView, algorithm: algorithm, renderer: renderer)
+        clusterManager = GMUClusterManager(map: map, algorithm: algorithm, renderer: renderer)
 
         listButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
@@ -62,6 +48,7 @@ class MainViewController: UIViewController {
                 return Driver.empty()
             }).drive(onNext: { [weak self] list in
                 self?.islandList = list
+                self?.reloadMap()
             }).disposed(by: disposeBag)
     }
 
