@@ -19,6 +19,8 @@
 		B9262EC62365583C00D10E1A /* IslandUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC52365583C00D10E1A /* IslandUseCase.swift */; };
 		B9262EC823655CEC00D10E1A /* IslandUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */; };
 		B9262ECB2365682000D10E1A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262ECA2365682000D10E1A /* MapViewModel.swift */; };
+		B97908172442E97200BF77A2 /* RealmDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97908162442E97200BF77A2 /* RealmDataStore.swift */; };
+		B97908192442EE4100BF77A2 /* Error+Extesntion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97908182442EE4100BF77A2 /* Error+Extesntion.swift */; };
 		B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542522D0E480002B83D1 /* AppDelegate.swift */; };
 		B987542822D0E480002B83D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B987542722D0E480002B83D1 /* MainViewController.swift */; };
 		B987542B22D0E480002B83D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B987542922D0E480002B83D1 /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 		B9262EC52365583C00D10E1A /* IslandUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandUseCase.swift; sourceTree = "<group>"; };
 		B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandUseCaseTests.swift; sourceTree = "<group>"; };
 		B9262ECA2365682000D10E1A /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		B97908162442E97200BF77A2 /* RealmDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataStore.swift; sourceTree = "<group>"; };
+		B97908182442EE4100BF77A2 /* Error+Extesntion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extesntion.swift"; sourceTree = "<group>"; };
 		B987542222D0E480002B83D1 /* OkinawaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OkinawaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987542522D0E480002B83D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B987542722D0E480002B83D1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				B9D7D0172401426200B88032 /* NSObject+Extension.swift */,
 				B9D7D013240140E200B88032 /* UITableView+Extension.swift */,
 				B9A921D0240B794A0003F9EA /* POIItem.swift */,
+				B97908162442E97200BF77A2 /* RealmDataStore.swift */,
+				B97908182442EE4100BF77A2 /* Error+Extesntion.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -529,9 +535,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */,
+				B97908192442EE4100BF77A2 /* Error+Extesntion.swift in Sources */,
 				B9D7D00324012ED200B88032 /* IslandsListViewController.swift in Sources */,
 				B9D7D014240140E200B88032 /* UITableView+Extension.swift in Sources */,
 				B9D7D0182401426200B88032 /* NSObject+Extension.swift in Sources */,
+				B97908172442E97200BF77A2 /* RealmDataStore.swift in Sources */,
 				B9D7D00B2401317700B88032 /* IslandTableViewCell.swift in Sources */,
 				B9262ECB2365682000D10E1A /* MapViewModel.swift in Sources */,
 				B9A921D1240B794A0003F9EA /* POIItem.swift in Sources */,
