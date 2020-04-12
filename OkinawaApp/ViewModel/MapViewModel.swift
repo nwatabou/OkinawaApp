@@ -14,7 +14,7 @@ final class MapViewModel {
     private let useCase = IslandUseCase()
 
     func fetchIslands() -> Single<[Island]> {
-        return useCase.fetchIslands().flatMap({ (response: IslandResponse) -> Single<[Island]> in
+        return useCase.fetchIslands().flatMap({ (response: Islands) -> Single<[Island]> in
             return Single.just(response.islands)
         })
     }

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftyJSON
 import RxSwift
 
 enum FetchError: Error {
@@ -16,8 +15,8 @@ enum FetchError: Error {
 
 final class IslandUseCase {
 
-    func fetchIslands() -> Single<IslandResponse> {
-        return Single<IslandResponse>.create(subscribe: { observer in
+    func fetchIslands() -> Single<Islands> {
+        return Single<Islands>.create(subscribe: { observer in
             do {
                 let fileName = "island"
                 guard let filePath = Bundle.main.path(forResource: fileName, ofType: "json") else {
@@ -26,8 +25,8 @@ final class IslandUseCase {
                 }
                 let fileUrl = URL(fileURLWithPath: filePath)
                 let data = try Data(contentsOf: fileUrl)
-                let json = JSON(data)
-                observer(.success(IslandResponse(json)))
+                let entity = try JSONDecoder().decode(Islands.self, from: data)
+                observer(.success(entity))
             } catch {
                 observer(.error(FetchError.notFoundSuchFile))
             }

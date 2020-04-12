@@ -12,10 +12,7 @@
 		A2FAA37EDDA9D18A476F7AF6 /* Pods_OkinawaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F02AD81BE884C09478897D /* Pods_OkinawaApp.framework */; };
 		B9262EB82364321200D10E1A /* island.json in Resources */ = {isa = PBXBuildFile; fileRef = B9262EB72364321200D10E1A /* island.json */; };
 		B9262EBA2364322600D10E1A /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EB92364322600D10E1A /* Island.swift */; };
-		B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBB2364327E00D10E1A /* ResponseEntity.swift */; };
-		B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBD2364337F00D10E1A /* IslandsResponse.swift */; };
-		B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBF236434D700D10E1A /* RequestEntity.swift */; };
-		B9262EC42364360F00D10E1A /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC32364360F00D10E1A /* ApiClient.swift */; };
+		B9262EBE2364337F00D10E1A /* Islands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EBD2364337F00D10E1A /* Islands.swift */; };
 		B9262EC62365583C00D10E1A /* IslandUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC52365583C00D10E1A /* IslandUseCase.swift */; };
 		B9262EC823655CEC00D10E1A /* IslandUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */; };
 		B9262ECB2365682000D10E1A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9262ECA2365682000D10E1A /* MapViewModel.swift */; };
@@ -66,10 +63,7 @@
 		85FF8AD2F0EA048D8893F68F /* Pods_OkinawaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OkinawaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9262EB72364321200D10E1A /* island.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = island.json; sourceTree = "<group>"; };
 		B9262EB92364322600D10E1A /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
-		B9262EBB2364327E00D10E1A /* ResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseEntity.swift; sourceTree = "<group>"; };
-		B9262EBD2364337F00D10E1A /* IslandsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandsResponse.swift; sourceTree = "<group>"; };
-		B9262EBF236434D700D10E1A /* RequestEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEntity.swift; sourceTree = "<group>"; };
-		B9262EC32364360F00D10E1A /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B9262EBD2364337F00D10E1A /* Islands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Islands.swift; sourceTree = "<group>"; };
 		B9262EC52365583C00D10E1A /* IslandUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandUseCase.swift; sourceTree = "<group>"; };
 		B9262EC723655CEC00D10E1A /* IslandUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandUseCaseTests.swift; sourceTree = "<group>"; };
 		B9262ECA2365682000D10E1A /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
@@ -190,8 +184,8 @@
 		B94FDF8E22D1B1F5002A9C9C /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B9262EBD2364337F00D10E1A /* Islands.swift */,
 				B9262EB92364322600D10E1A /* Island.swift */,
-				B9262EBD2364337F00D10E1A /* IslandsResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -199,9 +193,6 @@
 		B94FDF8F22D1B20A002A9C9C /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				B9262EBF236434D700D10E1A /* RequestEntity.swift */,
-				B9262EBB2364327E00D10E1A /* ResponseEntity.swift */,
-				B9262EC32364360F00D10E1A /* ApiClient.swift */,
 				B9D7D00F24013AD500B88032 /* Storyboard.swift */,
 				B9D7D0172401426200B88032 /* NSObject+Extension.swift */,
 				B9D7D013240140E200B88032 /* UITableView+Extension.swift */,
@@ -534,7 +525,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9262EBC2364327E00D10E1A /* ResponseEntity.swift in Sources */,
 				B97908192442EE4100BF77A2 /* Error+Extesntion.swift in Sources */,
 				B9D7D00324012ED200B88032 /* IslandsListViewController.swift in Sources */,
 				B9D7D014240140E200B88032 /* UITableView+Extension.swift in Sources */,
@@ -544,10 +534,8 @@
 				B9262ECB2365682000D10E1A /* MapViewModel.swift in Sources */,
 				B9A921D1240B794A0003F9EA /* POIItem.swift in Sources */,
 				B987542822D0E480002B83D1 /* MainViewController.swift in Sources */,
-				B9262EC42364360F00D10E1A /* ApiClient.swift in Sources */,
-				B9262EC0236434D700D10E1A /* RequestEntity.swift in Sources */,
 				B987542622D0E480002B83D1 /* AppDelegate.swift in Sources */,
-				B9262EBE2364337F00D10E1A /* IslandsResponse.swift in Sources */,
+				B9262EBE2364337F00D10E1A /* Islands.swift in Sources */,
 				B9262EBA2364322600D10E1A /* Island.swift in Sources */,
 				B9D7D01024013AD500B88032 /* Storyboard.swift in Sources */,
 				B9262EC62365583C00D10E1A /* IslandUseCase.swift in Sources */,

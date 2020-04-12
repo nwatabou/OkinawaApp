@@ -10,8 +10,6 @@ target 'OkinawaApp' do
   pod 'Google-Maps-iOS-Utils'
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'Alamofire'
-  pod 'SwiftyJSON'
   pod 'Material'
   pod 'RealmSwift'
 
